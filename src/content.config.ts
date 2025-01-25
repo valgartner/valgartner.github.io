@@ -4,12 +4,6 @@ import { glob } from "astro/loaders";
 
 import { CONFIG } from "config";
 
-export enum PostType {
-  dev = "dev",
-  musings = "musings",
-  life = "life",
-}
-
 export enum FoundType {
   video = "video",
   article = "article",
@@ -25,7 +19,7 @@ const posts = defineCollection({
     author: z.string().default(CONFIG.author),
     externalUrl: z.string().optional(),
     description: z.string(),
-    category: z.nativeEnum(PostType),
+    category: z.string(),
     publicationDate: z.coerce.date(),
     public: z.boolean().default(true),
     editDate: z.coerce.date().optional(),
