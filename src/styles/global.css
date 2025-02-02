@@ -183,11 +183,11 @@ main img {
 h1,
 h2,
 h3 {
-  font-family: "Solway", Georgia, "Times New Roman", Times, serif;
-  font-weight: 700;
+  font-family: "Encode Sans", sans-serif;
+  font-weight: 500;
   margin: 0;
   line-height: 1.1;
-  letter-spacing: -0.04em;
+  letter-spacing: 1px;
 }
 
 h1 {
