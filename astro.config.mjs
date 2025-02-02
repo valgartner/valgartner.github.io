@@ -6,8 +6,7 @@ import mdx from "@astrojs/mdx";
 import playformCompress from "@playform/compress";
 
 export default defineConfig({
-  base: "/",
-  site: CONFIG.site_url,
+  site: "https://valgartner.github.io",
   integrations: [sitemap(), mdx(), playformCompress()],
   markdown: {
     shikiConfig: {
